@@ -1,9 +1,3 @@
-# GIA SU:
-# $s0: dia chi co so mang A (base address)
-# $s1: so luong phan tu n
-# $s2: bien sum
-# $t0: bien chay i
-
 # KHOI TAO
     add $s2, $zero, $zero    # sum = 0
     add $t0, $zero, $zero    # i = 0
