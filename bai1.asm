@@ -1,29 +1,25 @@
-# Gi? s?:
-# $s0: ??a ch? c? s? c?a m?ng A
-# $s1: s? l??ng ph?n t? n
-# $s2: bi?n sum
-# $t0: bi?n ch?y i
-#int sum = 0;
-#for (int i = 0; i < n; i++) {
-#    sum = sum + A[i];
-#}
+# GIA SU:
+# $s0: dia chi co so mang A (base address)
+# $s1: so luong phan tu n
+# $s2: bien sum
+# $t0: bien chay i
 
-# Kh?i t?o
+# KHOI TAO
     add $s2, $zero, $zero    # sum = 0
     add $t0, $zero, $zero    # i = 0
 
 loop:
-    slt $t1, $t0, $s1        # Ki?m tra i < n
-    beq $t1, $zero, exit     # N?u i >= n thì thoát
+    slt $t1, $t0, $s1        # Kiem tra i < n
+    beq $t1, $zero, exit     # Neu i >= n thi thoat (branch if equal 0)
 
-    sll $t2, $t0, 2          # $t2 = i * 4
-    add $t2, $s0, $t2        # $t2 = ??a ch? c?a A[i]
-    lw  $t3, 0($t2)          # L?y giá tr? A[i] n?p vào $t3
+    sll $t2, $t0, 2          # $t2 = i * 4 (offset)
+    add $t2, $s0, $t2        # $t2 = dia chi cua A[i] (base + offset)
+    lw  $t3, 0($t2)          # Lay gia tri tu RAM A[i] nap vao thanh ghi $t3
 
-    add $s2, $s2, $t3        # sum = sum + A[i] (C?ng tr?c ti?p vào thanh ghi)
+    add $s2, $s2, $t3        # sum = sum + A[i]
 
     addi $t0, $t0, 1         # i = i + 1
-    j loop                   # Nh?y ng??c l?i ?? ti?p t?c vòng l?p
+    j loop                   # Quay lai nhan loop
 
 exit:
-    # K?t thúc ch??ng trình
+    # Ket thuc chuong trinh
