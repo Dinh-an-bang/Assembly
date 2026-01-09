@@ -13,3 +13,22 @@ for (int i = 0; i < n; i++) {
     sum = sum + A[i];
 }
 
+```
+# BÀI 2
+
+- `$s0` : mảng A
+- `$s1` = biến `n`
+- `$s2` = biến `max`
+
+## Mã c/c++
+
+```c
+int i = 1;
+int max = A[0];
+while (i < n) {
+    if (A[i] > max) {
+        max = A[i];
+    }
+    i++;
+}
+```
