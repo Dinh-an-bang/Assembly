@@ -31,4 +31,21 @@ while (i < n) {
     }
     i++;
 }
+
+```
+
+# BÀI 3
+
+- `$s0` : src address
+- `$s1` : dst address
+- `$t0` : `i`
+
+## Mã c/c++
+
+```c
+int i = 0;
+while ((dst[i] = src[i]) != 0) {
+    i++;
+}
+
 ```
