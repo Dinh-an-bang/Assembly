@@ -1,4 +1,4 @@
-# Giả sử
+# BÀI 1
 
 - `$s0`: địa chỉ cơ sở của mảng A  
 - `$s1`: số lượng phần tử `n`  
