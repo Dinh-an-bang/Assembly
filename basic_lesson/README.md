@@ -57,7 +57,7 @@ while ((dst[i] = src[i]) != 0) {
 
 ## Mã c/c++
 
-```
+```c
 int flag = 1; // 1 la so nguyen to
 for (int i = 2; i * i <= n; i++) {
     if (n % i == 0) {
@@ -77,7 +77,7 @@ for (int i = 2; i * i <= n; i++) {
 
 ## Mã c/c++
 
-```
+```c
 int i = 0, j = n - 1;
 while (i < j) {
     int temp = A[i];
@@ -97,7 +97,7 @@ while (i < j) {
 
 ## Mã c/c++
 
-```
+```c
 for (int i = k; i < n - 1; i++) {
     A[i] = A[i + 1];
 }
@@ -115,7 +115,7 @@ n = n - 1;
 
 ## Mã c/c++
 
-```
+```c
 int count = 1, max_count = 0;
 for (int i = 0; i < n - 1; i++) {
     if (A[i] == A[i+1]) {
@@ -137,7 +137,7 @@ for (int i = 0; i < n - 1; i++) {
 
 ## Mã c/c++
 
-```
+```c
 int sum = 0;
 for (int i = 0; i < N; i++) {
     sum += A[i][i];
@@ -153,7 +153,7 @@ for (int i = 0; i < N; i++) {
 
 ## Mã c/c++
 
-```
+```c
 for (int i = 0; i < n - 1; i++) {
     if (A[i] > A[i+1]) {
         int temp = A[i];
@@ -171,7 +171,7 @@ for (int i = 0; i < n - 1; i++) {
 
 ## Mã c/c++
 
-```
+```c
 int i = n - 1;
 while (i >= 0 && A[i] > x) {
     A[i + 1] = A[i];
