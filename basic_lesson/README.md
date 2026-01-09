@@ -49,7 +49,7 @@ while ((dst[i] = src[i]) != 0) {
 }
 
 ```
-#BÀI 4
+# BÀI 4
 
 - `$s0` : `n`
 - `$s1` : `flag`
@@ -67,7 +67,7 @@ for (int i = 2; i * i <= n; i++) {
 }
 
 ```
-#BÀI 5
+# BÀI 5
 
 - `$s0` : Mang A
 - `$s1` : `n`
@@ -88,7 +88,7 @@ while (i < j) {
 }
 
 ```
-#BÀI 6
+# BÀI 6
 
 - `$s0` : Mang A
 - `$s1` : `n`
@@ -104,7 +104,7 @@ for (int i = k; i < n - 1; i++) {
 n = n - 1;
 
 ```
-#BÀI 7
+# BÀI 7
 
 - Mang A : `$s0`
 - `n` : `$s1`
@@ -130,7 +130,7 @@ for (int i = 0; i < n - 1; i++) {
 }
 
 ```
-#BÀI 8
+# BÀI 8
 
 - Ma tran A : `$s0`, kich thuoc N : `$s1` (NxN), `sum` : `$s2`
 - Dia chi `A[i][j]` = `base + (i * N + j) * 4`
@@ -144,7 +144,7 @@ for (int i = 0; i < N; i++) {
 }
 
 ```
-#BÀI 9
+# BÀI 9
 
 - Mang A : `$s0`
 - `n` : `$s1`
@@ -163,7 +163,7 @@ for (int i = 0; i < n - 1; i++) {
 }
 
 ```
-#BÀI 10
+# BÀI 10
 
 - Mang A : `$s0`
 - `n` : `$s1`
